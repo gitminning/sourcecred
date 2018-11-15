@@ -99,8 +99,7 @@ const mentionsAuthorEdgeType = Object.freeze({
   forwardName: "mentions author of",
   backwardName: "has author mentioned by",
   defaultForwardWeight: 1,
-  // TODO(#811): Probably change this to 0
-  defaultBackwardWeight: 1 / 32,
+  defaultBackwardWeight: 0,
   prefix: E.Prefix.mentionsAuthor,
 });
 
@@ -108,8 +107,7 @@ const reactsHeartEdgeType = Object.freeze({
   forwardName: "reacted ❤️ to",
   backwardName: "got ❤️ from",
   defaultForwardWeight: 2,
-  // TODO(#811): Probably change this to 0
-  defaultBackwardWeight: 1 / 32,
+  defaultBackwardWeight: 0,
   prefix: E.Prefix.reactsHeart,
 });
 
@@ -117,8 +115,7 @@ const reactsThumbsUpEdgeType = Object.freeze({
   forwardName: "reacted 👍 to",
   backwardName: "got 👍 from",
   defaultForwardWeight: 1,
-  // TODO(#811): Probably change this to 0
-  defaultBackwardWeight: 1 / 32,
+  defaultBackwardWeight: 0,
   prefix: E.Prefix.reactsThumbsUp,
 });
 
@@ -126,8 +123,7 @@ const reactsHoorayEdgeType = Object.freeze({
   forwardName: "reacted 🎉 to",
   backwardName: "got 🎉 from",
   defaultForwardWeight: 4,
-  // TODO(#811): Probably change this to 0
-  defaultBackwardWeight: 1 / 32,
+  defaultBackwardWeight: 0,
   prefix: E.Prefix.reactsHooray,
 });
 
